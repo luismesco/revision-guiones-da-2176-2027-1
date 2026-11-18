@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+.login-art {
+  padding: clamp(24px, 4.5vw, 72px);
+  gap: 30px;
+}
+
+.login-art::after {
+  display: none;
+}
+
+.escudos,
+.pie-portada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.escudos img {
+  width: 62px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.datos-portada .institucion {
+  max-width: none;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--gold);
+  text-transform: uppercase;
+}
+
+.login-art h1 {
+  font-size: clamp(30px, 3.6vw, 55px);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -.025em;
+  margin: 20px 0 12px;
+}
+
+.login-art p {
+  max-width: none;
+  color: white;
+}
+
+.pie-portada {
+  align-items: end;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.pie-portada img {
+  width: 72px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.top {
+  background: var(--navy);
+  border-bottom: 3px solid var(--gold);
+}
+
+.top .brand,
+.top .brand span,
+.top .quiet {
+  color: white;
+}
+
+.top :focus-visible {
+  outline-color: #f1cb69;
+}
+
+a,
+.login-box h2,
+.intro h1,
+.list-title,
+.student h2,
+.student h3,
+.rubric-grid b {
+  color: var(--blue);
+}
+
+.login-box h2,
+.intro h1,
+.list-title,
+.rubric-grid b,
+.stats strong {
+  font-weight: 700;
+}
+
+.stats div:has(time) {
+  border-left-width: 4px;
+}
+
+.stats div:has(time) span {
+  margin: 0 0 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.stats time {
+  color: var(--blue);
+  font-size: clamp(17px, 2vw, 25px);
+  letter-spacing: normal;
+}
+
+@media (max-width: 650px) {
+  .login-art {
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .escudos img {
+    width: 43px;
+    height: 49px;
+  }
+
+  .login-art p {
+    margin-bottom: 10px;
+  }
+
+  .pie-portada img {
+    width: 48px;
+    height: 54px;
+  }
+}
